@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南台灣五大經典美食巡禮 (台南、高雄、屏東)</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="001.png"></script>
+    <!-- 設定字體為 Inter (通用字體，確保跨平台顯示良好) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* 輕微的背景灰 */
+        }
+        /* 自定義卡片效果 */
+        .food-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- 主標題區塊 -->
+    <header class="text-center mb-12">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">
+            南台灣美食巡禮
+        </h1>
+        <p class="text-xl text-indigo-600 font-medium">
+            台南、高雄、屏東五大經典在地小吃深度解析
+        </p>
+        <div class="h-1 w-24 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
+    </header>
+
+    <!-- 美食卡片網格 (響應式設計：小螢幕一欄，中螢幕兩欄，大螢幕三欄) -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 卡片 1: 台南 棺材板 -->
+        <div class="food-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <img src="001.png" 
+                 alt="台南特色美食：棺材板" 
+                 class="w-full h-64 object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/805ad5/ffffff?text=棺材板+Image+Error'">
+            
+            <div class="p-6">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full uppercase mb-2">台南府城</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">棺材板 (Coffin Bread)</h2>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    棺材板是台南最知名的創意小吃之一，起源於 1940 年代。它的名字雖然奇特，卻代表了台灣早期融合中西飲食文化的智慧。製作時選用厚片吐司炸至金黃酥脆，中間挖空後，填入以雞肝/雞肉、墨魚、豌豆、紅蘿蔔等和白醬調製的濃稠餡料。外皮酥脆，內層吸滿濃湯，口感豐富。
+                </p>
+            </div>
+        </div>
+
+        <!-- 卡片 2: 台南 碗粿 -->
+        <div class="food-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <img src="002.png" 
+                 alt="台南傳統點心：碗粿" 
+                 class="w-full h-64 object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/805ad5/ffffff?text=碗粿+Image+Error'">
+            
+            <div class="p-6">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full uppercase mb-2">台南府城</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">碗粿 (Wa-Gui / Savory Rice Cake)</h2>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    台南碗粿與中北部的純白碗粿不同，呈現濃郁的醬褐色。使用舊在來米磨成漿，確保蒸出來的粿體紮實且Q彈。製作時會將肉燥、香菇、蝦米、鹹蛋黃與豬肉片拌入米漿。食用時一定要淋上微甜的特製醬油膏與大量的蒜泥。台南人習慣用竹籤切塊食用。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 卡片 3: 高雄 旗魚黑輪 -->
+        <div class="food-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <img src="003.png" 
+                 alt="高雄夜市小吃：旗魚黑輪" 
+                 class="w-full h-64 object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/48bb78/ffffff?text=旗魚黑輪+Image+Error'">
+            
+            <div class="p-6">
+                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase mb-2">高雄港都</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">旗魚黑輪 (Swordfish Tempura)</h2>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    旗魚黑輪是高雄獨有的特色小吃，以新鮮旗魚漿為主料，質地細膩潔白。最大的特色在於內餡包入一小塊水煮蛋，在高溫油炸下外層酥脆，內餡滑嫩。在地吃法是搭配免費的黑輪湯，並灑上胡椒鹽或沾醬享用，是高雄夜市的人氣美食。
+                </p>
+            </div>
+        </div>
+
+        <!-- 卡片 4: 高雄 鴨肉飯與當歸鴨 -->
+        <div class="food-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <img src="004.png" 
+                 alt="高雄鹽埕區美食：鴨肉飯與當歸鴨" 
+                 class="w-full h-64 object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/48bb78/ffffff?text=鴨肉飯+Image+Error'">
+            
+            <div class="p-6">
+                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase mb-2">高雄港都</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">鴨肉飯與當歸鴨 (Duck Rice & Soup)</h2>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    高雄鹽埕區的鴨肉飯以淋在白飯上的「鴨油肉燥」為精髓，鴨油清香，肉燥鹹甜。鴨肉多採低溫慢煮或煙燻，軟嫩多汁。搭配的當歸鴨湯頭選用多種中藥材熬煮數小時，湯色深黑卻清甜回甘，暖胃滋補。
+                </p>
+            </div>
+        </div>
+
+        <!-- 卡片 5: 屏東 萬巒豬腳 -->
+        <div class="food-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+            <img src="005.png" 
+                 alt="屏東萬巒特色料理：萬巒豬腳" 
+                 class="w-full h-64 object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/ed8936/ffffff?text=萬巒豬腳+Image+Error'">
+            
+            <div class="p-6">
+                <span class="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full uppercase mb-2">屏東熱情</span>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">萬巒豬腳 (Wanluan Pork Knuckles)</h2>
+                <p class="text-gray-600 leading-relaxed text-base">
+                    萬巒豬腳是屏東的代表性美食，以「乾式、Q彈」著稱，不同於一般紅燒豬腳。使用十幾種中藥材滷製，控制火候使豬腳達到「皮Q、筋脆、肉嫩」的境界。通常切片後放涼或溫食，並搭配秘傳的蒜泥醬油膏，風味絕佳，富有膠質且不油膩。
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 頁尾資訊 -->
+    <footer class="text-center mt-12 py-6 text-gray-500 border-t border-gray-200">
+        <p>本美食資訊為南台灣地區代表性小吃精選，供旅遊參考。</p>
+        <p>圖片來源：美食生成模型示意圖。</p>
+    </footer>
+
+</body>
+</html>
